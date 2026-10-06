@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript prictice </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+  <header>
+    <nav>
+
+      <div class="search-bar">
+        <h2>Product Manager</h2>
+        <div class="next-item">
+          <input type="search" name="search" id="search-input" placeholder="Search Product">
+    
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="text">
+ <div class="text-content"> 
+     <h4>Product</h4>
+    <p>Manage your products and inventory</p></div>
+    <button type="submit" class="btn2">add a product</button>
+  </div>
+    
+  <div class="continner">
+    <div class="product-inventary">
+      <!-- ----------- product ----------->
+      <table class="parent">
+        <thead>
+          <tr>
+           
+            <th><input type="checkbox" name="checkbox" id="checkbox"> All</th>
+            <th>Product Name </th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- ------------------------POPUP FOR ADDING ELEMANT---------------------------- -->
+
+  <div class="popup-contenner">
+   <form class="popup-text">
+    <i class="fa-solid fa-x"></i>
+    <input type="text" name="name" id="name" placeholder="Please enter Name " class="newinput">
+    <input type="number" name="price" id="price" placeholder="Enter Amount" class="newinput">
+    <input type="number" name="stock" id="stock" placeholder="Enter Stock Amount" class="newinput">
+    <select name="status" id="available" class="newinput">
+     <option value="Out of stock">Out of stock</option>
+     <option value="Available">Available</option>
+
+     </select>
+     <input type="submit" value="Add In inventory" class="btn3">
+    </form>
+   
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
